@@ -1,0 +1,29 @@
+class Solution {
+public:
+    int jump(vector<int>& nums) {
+        
+        int n = nums.size();
+        
+        int fuel = 0;
+        int jumps = 0;
+        
+        vector<int> v(n,n);
+        queue<pair<int,int> > q;
+
+        for(int i=0;i<n;++i)
+        {
+           if(fuel>=i)
+               v[i]= jumps;
+           else
+           {
+               while(!q.empty() && q.front().first < i)
+                q.pop();
+               jumps = q.front().second;
+               fuel = q.front().first;
+               v[i]=jumps;
+           }
+           q.push({nums[i]+i,jumps+1});
+        }
+        return v[n-1];
+    }
+};

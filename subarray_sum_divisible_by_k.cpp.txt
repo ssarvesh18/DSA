@@ -1,0 +1,24 @@
+class Solution {
+public:
+    int subarraysDivByK(vector<int>& nums, int k) {
+        
+        int n= nums.size();
+        long long mx=nums[0];
+        long long sm=nums[0];
+        unordered_map<long long,int> um;
+        long long temp;
+        um[sm]++;
+        for(int i=1;i<n;++i)
+            mx = max(nums[i],mx+nums[i]);
+        long long l = sm/k;
+        for(int i=1;i<n;++i)
+        {
+            for(long long j=0;j<l;++j)
+            {
+                temp= k
+                if(um.find(k*i))
+            }
+        }
+        
+    }
+};
