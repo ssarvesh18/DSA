@@ -1,1 +1,0 @@
-{"name":"sse-weather-new","description":"weaether updates","mcp":{"source":null,"server_url":"https://weather-mcp-server.1ztdssb3chnz.us-south.codeengine.appdomain.cloud/sse","transport":"sse","command":null,"args":[],"env":null,"tools":["*"],"connections":{}}}
