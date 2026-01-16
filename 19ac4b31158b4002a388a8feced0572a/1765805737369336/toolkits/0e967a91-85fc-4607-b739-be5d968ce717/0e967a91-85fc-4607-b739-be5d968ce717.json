@@ -1,0 +1,1 @@
+{"name":"ravitavilyservername","description":"","mcp":{"source":"public-registry","server_url":null,"transport":null,"command":"npx","args":["-y","@mcptools/mcp-tavily"],"env":null,"tools":["*"],"connections":{"name":"0fc307e1-f5c4-410a-825c-006cb0e7c267"}}}
